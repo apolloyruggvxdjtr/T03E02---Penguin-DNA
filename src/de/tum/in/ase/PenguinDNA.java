@@ -4,16 +4,40 @@ public class PenguinDNA {
     public static boolean checkChains(String chain1, String chain2) {
         //TODO: Check if two chains can bind to eachother
         boolean check = false;
-        while(chain1.length() == chain2.length()) {
-            for(int i = 0; i<chain1.length(); i++) {
+        if (chain1.length() == chain2.length()) {
+            for (int i = 0; i < chain1.length(); i++) {
                 char checkChar1 = chain1.charAt(i);
                 char checkChar2 = chain2.charAt(i);
 
                 switch (checkChar1) {
-                    case 'A': if(checkChar2 == 'T') { check = true;} else { check = false;};
-                    case 'C': if(checkChar2 == 'G') { check = true;} else { check = false;};
-                    case 'G': if(checkChar2 == 'C') { check = true;} else { check = false;};
-                    case 'T': if(checkChar2 == 'A') { check = true;} else { check = false;};
+                    case 'A':
+                        if (checkChar2 == 'T') {
+                            check = true;
+                        } else {
+                            check = false;
+                        }
+                        ;
+                    case 'C':
+                        if (checkChar2 == 'G') {
+                            check = true;
+                        } else {
+                            check = false;
+                        }
+                        ;
+                    case 'G':
+                        if (checkChar2 == 'C') {
+                            check = true;
+                        } else {
+                            check = false;
+                        }
+                        ;
+                    case 'T':
+                        if (checkChar2 == 'A') {
+                            check = true;
+                        } else {
+                            check = false;
+                        }
+                        ;
                 }
             }
         }
