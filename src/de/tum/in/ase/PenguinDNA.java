@@ -50,10 +50,10 @@ public class PenguinDNA {
         for(int i = 0; i<chain1.length(); i++){
             char matchChar1 = chain1.charAt(i);
             switch (matchChar1) {
-                case 'A': chain2 = chain2 + "T";
-                case 'C': chain2 = chain2 + "G";
-                case 'G': chain2 = chain2 + "C";
-                case 'T': chain2 = chain2 + "A";
+                case 'A': chain2 = chain2 +"T";
+                case 'C': chain2 = chain2 +"G";
+                case 'G': chain2 = chain2 +"C";
+                case 'T': chain2 = chain2 +"A";
             }
 
         }
